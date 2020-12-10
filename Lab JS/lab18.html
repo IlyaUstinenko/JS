@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+        let n = parseInt(prompt("Введите n"));
+        let arr = [0, 1, 1];
+        let l = 0;
+        let i = 3;
+        while (l < n) {
+            l = arr.length;
+            arr.push(arr[i - 2] + arr[i - 1]);
+            i = arr.length;
+            alert(arr);
+        }
+    </script>
+</body>
+</html>

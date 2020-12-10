@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+    let a = parseInt(prompt("Введите массу гантели №1"));
+    let b = parseInt(prompt("Введите массу гантели №2"));
+    let c = parseInt(prompt("Введите массу гантели №3"));
+    let result = a + b + c;
+    alert("Сумма масс всех гантелей равна: " + result);
+    if (a >= b && a >= c) {
+        alert("Гантеля №1 самая тяжелая!");
+    }
+    else if (b >= a && b >= c) {
+        alert("Гантеля №2 самая тяжелая!");
+    }
+    else if (c >= b && c >= a) {
+        alert("Гантеля №3 самая тяжелая!");
+    }
+    if (a <= b && a <= c) {
+        alert("Гантеля №1 самая легкая!");
+    }
+    else if (b <= a && b <= c) {
+        alert("Гантеля №2 самая легкая!");
+    }
+    else if (c <= b && c <= a) {
+        alert("Гантеля №3 самая легкая!");
+    }
+    </script>
+</body>
+</html>

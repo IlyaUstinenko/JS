@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+    let str = prompt('Введите строку');
+      let l = str.length;
+      let srstr = Math.floor(l/2);
+      for(let i = 0; i< srstr; i++){
+        if (str[i] !== str[l-1-i]){
+          alert("Строка не является полиндромом");
+        }
+      }
+    alert("Строка является полиндромом");
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+    let str = prompt("Введите электронную почту");
+    let a = str.indexOf('@');
+    let d = str.slice(0,a);
+    let b = str.slice(a);
+    let dot = b.indexOf('.');
+    let sdot1 = b.slice(dot);
+    let s2 = b.slice(0, dot);
+      if(a == -1){
+          alert('Не хватает "@"');
+        } else {
+          if(str.length <= 6){
+            alert("Недостаточно символов");
+          } else {
+              if(d.length <=1) {
+                alert('Недостаточно символов перед "@"');
+              } else {
+                if(dot == -1){
+                  alert('Не хватает точки после "@"');
+              } else {
+                  if(sdot1.length <= 2){
+                    alert('Не хватает символов после "."');
+                  } else {
+                      if(s2.length <=1) {
+                        alert('Не хватает символов между "@" и "."');
+                      } else {
+                    alert('Ты справился');
+                    }
+                  } 
+                }
+            }
+        }
+    }    
+    </script>
+</body>
+</html>

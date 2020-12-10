@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+        let s = prompt("Введите строку");
+        let n = s.length;
+        if (n < 20) {
+            alert("В вашей строке меньше 20 символов");
+        } else {
+            let counter = 0;
+            alert("Ваша строка - " + s);
+            let str = s.split("");
+            flag = str[4];
+            for (let i in str) {
+                if (str[i] == flag) {
+                    counter = counter + 1;
+                }
+            }
+        }
+        alert("В вашей строке " + counter + " символов " + flag + " (5)");
+    </script>
+</body>
+</html>

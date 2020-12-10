@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+    let str = prompt('Введите строку');
+    str = str.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
+    let str1 = str.split(' ');
+    let count = 0;
+    let min = 999;
+    let max = 0;
+    let y = [];
+     for(i in str1){
+         y.push(str1[i].length);
+        }
+    for(i in y) {
+         if(y[i]>max){
+             max = y[i];
+         }
+         if(y[i]<min){
+             min = y[i];
+         }
+         count = count +y[i];
+        }
+        var avg = count/str1.length;
+    alert("Длина строки состоит из " + (str1.length) + " слов" + "\nСамое длинное слово содержит " + max + " букв" + "\nСамое короткое слово содержит " + min +" букв" + "\nСредняя длина " + avg.toFixed(1) + "слов");
+    </script>
+</body>
+</html>

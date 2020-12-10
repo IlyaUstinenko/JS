@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+        let date = new Date(); 
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let time = hours + minutes/100;
+        if (hours >= 7 && hours<8) {
+            alert("Время завтрака");
+        }
+        if(hours>=13 && hours<14) {
+            alert("Время обеда");
+        }
+        if(hours>=19 && hours<20) {
+            alert("Время ужина");
+        }
+        if(hours>=9 && hours<18) {
+            alert("Время работы");
+        }
+        if(hours>=18 && hours<23) {
+            alert("Время отдыха");
+        }
+        if(hours>=23 && time<6.3) {
+            alert("Время сна");
+        }
+    </script>
+</body>
+</html>
